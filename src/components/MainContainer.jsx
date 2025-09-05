@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Projects from "./Projects";
-import Rough from "./rough"
+import Rough from "./rough";
+import Footer from "./Footer";
 
 function MainContainer() {
 
@@ -11,6 +12,7 @@ function MainContainer() {
             <Navbar/>
             <Hero/>
             <Projects/>
+            <Footer/>
         </div>
         
     )

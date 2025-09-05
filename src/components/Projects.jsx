@@ -23,12 +23,37 @@ const projects = [
   },
   {
     id: 2,
-    title: "Options Screener",
-    video: "/videos/optionStrategy.mp4",
+    title: "Automated Covered Call Backtesting Tool",
+    video: "/videos/backtesting.mp4",
     points: [
-      "Spring Boot backend",
-      "Real-time options data",
-      "Trade recommendation engine",
+      <p>Built a Python-based backtester to simulate covered call options strategies on historical stock data.</p>,
+      <p>Automated daily fetch of live stock and options prices; logged results to CSV for transparency.</p>,
+      <p>Compared strategy returns with buy-and-hold baseline; visualized outcomes using Matplotlib.</p>,
+      <p><span className = "!font-bold">Skills: </span>Python, Pandas, Github workflow, Automation</p>,
+      <p>
+        <a href="https://github.com/dhruvesh131199/covered_call_daily_update" className="text-blue-400 underline" target="_blank" rel="noopener noreferrer">
+            GitHub Repo
+        </a>
+      </p>,
+    ],
+  },
+  {
+    id: 3,
+    title: "Stock Weekly Volatility Predictor",
+    video: "/videos/stockVolatilityPredictor.mp4",
+    points: [
+      <p>Built and deployed a full-stack machine learning web app to forecast weekly stock volatility using OHLCV data.</p>,
+      <p>Engineered custom features from daily financial data and trained an XGBoost regression model.</p>,
+      <p>Developed FastAPI backend to fetch live data, derive custom features, feed data to the model, and serve predictions via REST API.</p>,
+      <p><span className = "!font-bold">Skills: </span>Python, XGBoost, FastAPI, Docker, CI/CD, React, Render</p>,
+      <p>
+        <a href="https://github.com/dhruvesh131199/volatility-predictor-machine-learning" className="text-blue-400 underline" target="_blank" rel="noopener noreferrer">
+            GitHub Repo
+        </a><span> | </span>
+        <a href="https://volatility-predictor.onrender.com/" className="text-blue-400 underline" target="_blank" rel="noopener noreferrer">
+           Live App
+        </a>
+      </p>,
     ],
   },
 ];
@@ -42,7 +67,8 @@ export default function Projects() {
   const project = projects[index];
 
   return (
-    <div className="w-full px-10 mx-auto mb-25 relative">
+    <div id = "projects" className="w-full px-10 mx-auto mb-25 relative">
+    <h2 className = "text-5xl md:text-5xl lg:text-5xl mt-20 mb-10 text-white text-center font-bold">Projects</h2>
       {/* Content */}
       <motion.div
         key={project.id}
