@@ -11,20 +11,20 @@ function HeroSection() {
   const typingSpeed = 50;
 
   const skills = [
-    { name: 'Python', logo: '/logos/python.png' },
-    { name: 'Java', logo: '/logos/java.png' },
-    { name: 'React', logo: '/logos/react.png' },
-    { name: 'MySQL', logo: '/logos/mysql.png' },
-    { name: 'MongoDB', logo: '/logos/mongodb.png' },
-    { name: 'Docker', logo: '/logos/docker.png' },
-    { name: 'SpringBoot', logo: '/logos/springboot.png' },
-    { name: 'FastAPI', logo: '/logos/fastapi.png' },
-    { name: 'Pandas', logo: '/logos/pandas.png' },
-    { name: 'Numpy', logo: '/logos/numpy.png' },
-    { name: 'Git', logo: '/logos/git.png' },
-    { name: 'AWS', logo: '/logos/aws.png' },
-    { name: 'Excel', logo: '/logos/excel.png' },
-    { name: 'Tableau', logo: '/logos/tableau.png' }
+    { name: 'Python', logo: 'logos/python.png' },
+    { name: 'Java', logo: 'logos/java.png' },
+    { name: 'React', logo: 'logos/react.png' },
+    { name: 'MySQL', logo: 'logos/mysql.png' },
+    { name: 'MongoDB', logo: 'logos/mongodb.png' },
+    { name: 'Docker', logo: 'logos/docker.png' },
+    { name: 'SpringBoot', logo: 'logos/springboot.png' },
+    { name: 'FastAPI', logo: 'logos/fastapi.png' },
+    { name: 'Pandas', logo: 'logos/pandas.png' },
+    { name: 'Numpy', logo: 'logos/numpy.png' },
+    { name: 'Git', logo: 'logos/git.png' },
+    { name: 'AWS', logo: 'logos/aws.png' },
+    { name: 'Excel', logo: 'logos/excel.png' },
+    { name: 'Tableau', logo: 'logos/tableau.png' }
   ];
 
   useEffect(() => {

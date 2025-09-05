@@ -6,7 +6,7 @@ const projects = [
   {
     id: 1,
     title: "Options Strategy Recommender",
-    video: "/videos/optionStrategy.mp4",
+    video: "videos/optionStrategy.mp4",
     points: [
       <p>Built a full-stack Options Strategy Recommender using Spring Boot and React, with user inputs for ticker, strategy, expiry, and risk to suggest relevant options positions using Yahoo Finance data.</p>,
       <p>Deployed on Google Cloud Platform with basic CI/CD setup, demonstrating skills in web app development, cloud deployment, and financial data integration.</p>,
@@ -24,7 +24,7 @@ const projects = [
   {
     id: 2,
     title: "Automated Covered Call Backtesting Tool",
-    video: "/videos/backtesting.mp4",
+    video: "videos/backtesting.mp4",
     points: [
       <p>Built a Python-based backtester to simulate covered call options strategies on historical stock data.</p>,
       <p>Automated daily fetch of live stock and options prices; logged results to CSV for transparency.</p>,
@@ -40,7 +40,7 @@ const projects = [
   {
     id: 3,
     title: "Stock Weekly Volatility Predictor",
-    video: "/videos/stockVolatilityPredictor.mp4",
+    video: "videos/stockVolatilityPredictor.mp4",
     points: [
       <p>Built and deployed a full-stack machine learning web app to forecast weekly stock volatility using OHLCV data.</p>,
       <p>Engineered custom features from daily financial data and trained an XGBoost regression model.</p>,

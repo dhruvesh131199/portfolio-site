@@ -43,7 +43,7 @@ function Footer(){
 	            <Mail className="w-6 h-6" />
 	          </a>
 	          <a
-	            href="/resume/DhruveshResume.pdf" // put your resume file in public folder
+	            href="resume/DhruveshResume.pdf" // put your resume file in public folder
 	            target="_blank"
 	            rel="noopener noreferrer"
 	            className="flex items-center gap-1 bg-blue-600 hover:bg-blue-500 text-white px-3 py-1 rounded-lg text-sm font-medium transition-colors"
