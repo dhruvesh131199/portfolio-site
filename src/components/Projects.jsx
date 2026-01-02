@@ -5,6 +5,22 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const projects = [
   {
     id: 1,
+    title: "AI Agents for the Software Development Lifecycle",
+    video: "videos/cgi.mp4",
+    points: [
+      <p>End-to-end pipeline: Jira → Intent → Semantic Search → Code Diff → GitHub</p>,
+      <p>Multi-step LLM agents generate search queries and refactoring diffs</p>,
+      <p>Safe deployment with manual approval before every commit</p>,
+      <p><span className = "!font-bold">Skills: </span>Python, Streamlit, LLMs (Agentic Workflows), Semantic Search (ChromaDB), Neo4j, GitHub Automation, Jira API</p>,
+      <p>
+        <a href="https://github.com/dhruvesh131199/AI-automation-for-SDLC" className="text-blue-400 underline" target="_blank" rel="noopener noreferrer">
+            GitHub Repo
+        </a>
+      </p>,
+    ],
+  },
+  {
+    id: 2,
     title: "Options Strategy Recommender",
     video: "videos/optionStrategy.mp4",
     points: [
@@ -22,7 +38,7 @@ const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Automated Covered Call Backtesting Tool",
     video: "videos/backtesting.mp4",
     points: [
@@ -38,7 +54,7 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Stock Weekly Volatility Predictor",
     video: "videos/stockVolatilityPredictor.mp4",
     points: [
