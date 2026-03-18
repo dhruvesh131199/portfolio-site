@@ -25,6 +25,7 @@ const PresentationPage = () => {
     { id: 9, type: 'image', src: 'slides/slide-09.png',          title: 'How AI helped' },
   ];
 
+
   return (
     <div className="relative min-h-screen text-white font-custom">
 
@@ -71,7 +72,7 @@ const PresentationPage = () => {
                   // FIX 1: Double-check this exact line! This forces every new card to stop 30px lower than the last one.
                   top: `calc(10vh + ${index * 30}px)`, 
                   zIndex: index,
-                  marginBottom: '60vh', // Keep this the same for every single card
+                  marginBottom:'60vh', // Keep this the same for every single card
                   paddingBottom: '12px',
                 }}
               >
@@ -111,7 +112,7 @@ const PresentationPage = () => {
       </main>
 
       {/* FOOTER */}
-      <div className="relative z-10">
+      <div className="relative -mt-[200px]">
         <Footer />
       </div>
     </div>
