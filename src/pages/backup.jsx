@@ -25,6 +25,7 @@ const PresentationPage = () => {
     { id: 9, type: 'image', src: 'slides/slide-09.png',          title: 'How AI helped' },
   ];
 
+
   return (
     <div className="relative min-h-screen text-white font-custom">
 
@@ -63,17 +64,15 @@ const PresentationPage = () => {
       <main className="container mx-auto px-4">
         <div className="relative flex flex-col items-center">
           {stackItems.map((item, index) => {
-            const isLast = index === stackItems.length - 1;
-
             return (
               <div
                 key={item.id}
-                className="sticky w-full max-w-6xl transition-transform duration-500"
+                className="sticky w-full max-w-5xl transition-transform duration-500"
                 style={{
-                  top: '15vh',
+                  // FIX 1: Double-check this exact line! This forces every new card to stop 30px lower than the last one.
+                  top: `calc(10vh + ${index * 30}px)`, 
                   zIndex: index,
-                  /* FIX 3: bottom margin so cards peek with breathing room */
-                  marginBottom: isLast ? '4rem' : '60vh',
+                  marginBottom:'60vh', // Keep this the same for every single card
                   paddingBottom: '12px',
                 }}
               >
@@ -86,7 +85,6 @@ const PresentationPage = () => {
                       className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
                     />
                   ) : (
-                    /* FIX 2: src directly on <video>, not <source> — matches how it works on homepage */
                     <video
                       src={item.src}
                       autoPlay
@@ -105,6 +103,11 @@ const PresentationPage = () => {
               </div>
             );
           })}
+          
+          {/* FIX 2: THE MAGIC SPACER */}
+          {/* This invisible block gives the final card extra room to "stick" and stay on screen before the footer is pulled up */}
+          <div className="h-[50vh] w-full pointer-events-none" aria-hidden="true" />
+
         </div>
       </main>
 
