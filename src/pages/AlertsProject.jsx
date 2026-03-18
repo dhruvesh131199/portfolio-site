@@ -7,21 +7,21 @@ import Footer from '../components/Footer';
 // Vite serves public/ as-is — no bundling, no memory issues, no crashes.
 // Move your entire src/slides/ folder to public/slides/ in your file explorer.
 const demoVideo = 'slides/aialertsdemo.mp4';
-const slide01   = 'slides/slide01.png';
-const slide02   = 'slides/slide02.png';
-const slide03   = 'slides/slide03.png';
-const slide04   = 'slides/slide04.png';
-const slide05   = 'slides/slide05.png';
-const slide06   = 'slides/slide06.png';
+const slide01 = 'slides/slide01.png';
+const slide02 = 'slides/slide02.png';
+const slide03 = 'slides/slide03.png';
+const slide04 = 'slides/slide04.png';
+const slide05 = 'slides/slide05.png';
+const slide06 = 'slides/slide06.png';
 
 const slides = [
-  { id: 1, type: 'image', src: '/portfolio-site/slides/slide01.png',       title: 'Why I built this',    index: '01' },
-  { id: 2, type: 'video', src: '/portfolio-site/slides/aialertsdemo.mp4',  title: 'Demo',                index: '02' },
-  { id: 3, type: 'image', src: '/portfolio-site/slides/slide02.png',       title: 'System Architecture', index: '03' },
-  { id: 4, type: 'image', src: '/portfolio-site/slides/slide03.png',       title: 'Challenges and Solutions',        index: '04' },
-  { id: 5, type: 'image', src: '/portfolio-site/slides/slide04.png',       title: 'Key learnings', index: '05' },
-  { id: 6, type: 'image', src: '/portfolio-site/slides/slide05.png',       title: 'Working with AI',       index: '06' },
-  { id: 7, type: 'image', src: '/portfolio-site/slides/slide06.png',       title: 'Tech stack', index: '07' },
+  { id: 1, type: 'image', src: '/portfolio-site/slides/slide01.png', title: 'Why I built this', index: '01' },
+  { id: 2, type: 'video', src: '/portfolio-site/slides/aialertsdemo.mp4', title: 'Demo', index: '02' },
+  { id: 3, type: 'image', src: '/portfolio-site/slides/slide02.png', title: 'System Architecture', index: '03' },
+  { id: 4, type: 'image', src: '/portfolio-site/slides/slide03.png', title: 'Challenges and Solutions', index: '04' },
+  { id: 5, type: 'image', src: '/portfolio-site/slides/slide04.png', title: 'Key learnings', index: '05' },
+  { id: 6, type: 'image', src: '/portfolio-site/slides/slide05.png', title: 'Working with AI', index: '06' },
+  { id: 7, type: 'image', src: '/portfolio-site/slides/slide06.png', title: 'Tech stack', index: '07' },
 ];
 
 const AlertsProject = () => {
@@ -60,7 +60,7 @@ const AlertsProject = () => {
   useEffect(() => {
     const handler = (e) => {
       if (e.key === 'ArrowDown' || e.key === 'ArrowRight') goNext();
-      if (e.key === 'ArrowUp'   || e.key === 'ArrowLeft')  goPrev();
+      if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') goPrev();
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
@@ -84,12 +84,12 @@ const AlertsProject = () => {
 
       {/* Back button */}
       <nav className="fixed top-0 left-0 p-8 z-50">
-        <button
-          onClick={() => navigate('/')}
-          className="mt-2 text-sm font-mono tracking-widest text-amber-400 border border-amber-400 border-opacity-40 px-4 py-2 rounded hover:bg-amber-400 hover:text-black transition-all duration-200"
+        <a
+          href={import.meta.env.BASE_URL}
+          className="inline-block mt-2 text-sm font-mono tracking-widest text-amber-400 border border-amber-400 border-opacity-40 px-4 py-2 rounded hover:bg-amber-400 hover:text-black transition-all duration-200"
         >
           ← Back to Home
-        </button>
+        </a>
       </nav>
 
       {/* Slide counter — top right */}
