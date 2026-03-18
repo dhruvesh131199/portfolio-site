@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
+
 const projects = [
   {
     id: 1,
     title: "AI Alerts Generator",
-    video: "videos/aialertsdemo.mp4",
+    video: "slides/aialertsdemo.mp4",
     isNew: true,
     points: [
       <p>AI agent that turns plain-English scenarios into SQL reports — no coding required.</p>,
