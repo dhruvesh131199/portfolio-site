@@ -5,6 +5,13 @@ import Footer from '../components/Footer';
 
 //import profileImg from '../profile/profile.jpg'; 
 import demoVideo from '../../public/videos/aialertsdemo.mp4';
+import slide01 from '../../public/slides/slide01.png';
+import slide02 from '../../public/slides/slide02.png';
+import slide03 from '../../public/slides/slide03.png';
+import slide04 from '../../public/slides/slide04.png';
+import slide05 from '../../public/slides/slide05.png';
+import slide06 from '../../public/slides/slide06.png';
+
 
 const PresentationPage = () => {
   const navigate = useNavigate();
@@ -14,15 +21,13 @@ const PresentationPage = () => {
   }, []);
 
   const stackItems = [
-    { id: 1, type: 'image', src: "",          title: 'Why I built this' },
-    { id: 2, type: 'video', src: demoVideo,    title: 'Demo' },
-    { id: 3, type: 'image', src: 'slides/slide-03.png',          title: 'The idea' },
-    { id: 4, type: 'image', src: 'slides/slide-04.png',          title: 'How it works' },
-    { id: 5, type: 'image', src: 'slides/slide-05.png',          title: 'System architecture' },
-    { id: 6, type: 'image', src: 'slides/slide-06.png',          title: 'Key learnings' },
-    { id: 7, type: 'image', src: 'slides/slide-07.png',          title: 'Challenges & future' },
-    { id: 8, type: 'image', src: 'slides/slide-08.png',          title: 'Tech stack' },
-    { id: 9, type: 'image', src: 'slides/slide-09.png',          title: 'How AI helped' },
+    { id: 1, type: 'image', src: slide01,          title: 'Why I built this' },
+    { id: 2, type: 'video', src: demoVideo,        title: 'Demo' },
+    { id: 3, type: 'image', src: slide02,          title: 'The idea' },
+    { id: 4, type: 'image', src: slide03,          title: 'How it works' },
+    { id: 5, type: 'image', src: slide04,          title: 'System architecture' },
+    { id: 6, type: 'image', src: slide05,          title: 'Key learnings' },
+    { id: 7, type: 'image', src: slide06,          title: 'Challenges & future' },
   ];
 
 
@@ -112,7 +117,7 @@ const PresentationPage = () => {
       </main>
 
       {/* FOOTER */}
-      <div className="relative z-10">
+      <div className="relative -mt-[200px]">
         <Footer />
       </div>
     </div>
