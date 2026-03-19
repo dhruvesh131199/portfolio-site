@@ -7,12 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dhruvesh Chauhan</title>
   <script>
-    const redirect = sessionStorage.getItem('redirect');
+  (function() {
+    var redirect = sessionStorage.getItem('redirect');
     if (redirect) {
       sessionStorage.removeItem('redirect');
-      window.history.replaceState(null, '', '/portfolio-site' + redirect);
+      // This applies the URL cleanly without stacking slashes
+      window.history.replaceState(null, null, redirect);
     }
-  </script>
+  })();
+</script>
 </head>
 
 <body>

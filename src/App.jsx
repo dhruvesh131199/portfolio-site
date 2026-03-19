@@ -6,6 +6,7 @@ import AlertsProject from './pages/AlertsProject.jsx'
 
 function App() {
   return (
+    // Hardcoded basename. Note: React Router prefers no trailing slash here!
     <BrowserRouter basename="/portfolio-site">
       <Routes>
         <Route path="/" element={
