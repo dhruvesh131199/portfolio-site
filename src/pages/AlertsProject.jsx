@@ -15,13 +15,13 @@ const slide05 = 'slides/slide05.png';
 const slide06 = 'slides/slide06.png';
 
 const slides = [
-  { id: 1, type: 'image', src: '/portfolio-site/slides/slide01.png', title: 'Why I built this', index: '01' },
-  { id: 2, type: 'video', src: '/portfolio-site/slides/aialertsdemo.mp4', title: 'Demo', index: '02' },
-  { id: 3, type: 'image', src: '/portfolio-site/slides/slide02.png', title: 'System Architecture', index: '03' },
-  { id: 4, type: 'image', src: '/portfolio-site/slides/slide03.png', title: 'Challenges and Solutions', index: '04' },
-  { id: 5, type: 'image', src: '/portfolio-site/slides/slide04.png', title: 'Key learnings', index: '05' },
-  { id: 6, type: 'image', src: '/portfolio-site/slides/slide05.png', title: 'Working with AI', index: '06' },
-  { id: 7, type: 'image', src: '/portfolio-site/slides/slide06.png', title: 'Tech stack', index: '07' },
+  { id: 1, type: 'image', src: `${import.meta.env.BASE_URL}slides/slide01.png`, title: 'Why I built this', index: '01' },
+  { id: 2, type: 'video', src: `${import.meta.env.BASE_URL}slides/aialertsdemo.mp4`, title: 'Demo', index: '02' },
+  { id: 3, type: 'image', src: `${import.meta.env.BASE_URL}slides/slide02.png`, title: 'System Architecture', index: '03' },
+  { id: 4, type: 'image', src: `${import.meta.env.BASE_URL}slides/slide03.png`, title: 'Challenges and Solutions', index: '04' },
+  { id: 5, type: 'image', src: `${import.meta.env.BASE_URL}slides/slide04.png`, title: 'Key learnings', index: '05' },
+  { id: 6, type: 'image', src: `${import.meta.env.BASE_URL}slides/slide05.png`, title: 'Working with AI', index: '06' },
+  { id: 7, type: 'image', src: `${import.meta.env.BASE_URL}slides/slide06.png`, title: 'Tech stack', index: '07' },
 ];
 
 const AlertsProject = () => {
