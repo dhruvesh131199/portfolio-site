@@ -67,7 +67,7 @@ function HeroSection() {
         {/* Rutgers + Internship Info */}
         {showSubtext && (
           <p className="mt-2 text-gray-300 text-md md:text-lg transition-opacity duration-1000 opacity-100">
-            Master’s Student @ Rutgers | Computer & Information Sciences | Open to Summer 2026 Internships
+            Master’s Student @ Rutgers | Computer & Information Sciences | Seeking Summer & Fall 2026 Co-op / Internship opportunities
           </p>
         )}
       </div>
@@ -77,9 +77,8 @@ function HeroSection() {
         showAbout ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
       }`}>
         <p className="text-lg md:text-xl text-gray-300 mb-6 leading-loose">
-          <span className="bg-white text-black p-1 mr-1">Curious</span>analytical 
-          <span className="bg-white text-black p-1 ml-1 mr-1">problem solver</span>who takes 
-          <span className="bg-white text-black p-1 ml-1 mr-1">ownership</span>of complex tasks, passionate about turning data and ideas into impactful solutions. Skilled in <span className="bg-violet-900 text-white">fullStackDevelopment</span>, <span className="bg-violet-900 text-white">machineLearning</span>, and <span className="bg-violet-900 text-white">dataAnalysis</span>.
+          I am <span className="bg-white text-black p-1 ml-1 mr-1">curious</span> and <span className="bg-white text-black p-1 ml-1 mr-1">analytical</span>, building systems that{" "}
+          <span className="bg-white text-black p-1 ml-1 mr-1">solve complex, real-world problems</span>.
         </p>
       </div>
 

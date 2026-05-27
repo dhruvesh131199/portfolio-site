@@ -13,7 +13,7 @@ function Footer(){
 	          </h2>
 	          <p className="text-sm">
 	            Master’s Student @ Rutgers New Brunswick | Computer & Information Sciences<br />
-	            Open to Summer 2026 Internships<br/>
+	            Seeking Summer & Fall 2026 Co-op / Internship opportunities<br/>
 	          </p>
 	          <p className = "mt-4"><em className = "text-sm bg-violet-900 text-white">dhruvesh.chauhan13@gmail.com</em></p>
 	        </div>
