@@ -4,7 +4,7 @@ export const site = {
   email: "dhruvesh.chauhan13@gmail.com",
   linkedin: "https://www.linkedin.com/in/dhruveshchauhan/",
   github: "https://github.com/dhruvesh131199",
-  resume: "/resume/DhruveshResume.pdf",
+  resume: `${import.meta.env.BASE_URL}resume/DhruveshResume.pdf`,
   tagline:
     "Master’s student at Rutgers — Computer & Information Sciences — building AI systems, full-stack products, and financial tooling. Seeking Summer & Fall 2026 co-op / internship opportunities.",
 };
