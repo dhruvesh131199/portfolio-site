@@ -17,11 +17,24 @@ export function About() {
 
         <section className="about__section">
           <h2>Experience</h2>
-          <ul>
-            {about.experience.map((item) => (
-              <li key={item}>{item}</li>
+          <div className="about__jobs">
+            {about.experience.map((job) => (
+              <article key={`${job.title}-${job.org}`} className="about__job">
+                <header className="about__job-header">
+                  <h3 className="about__job-title">
+                    {job.title}
+                    <span className="about__job-org"> | {job.org}</span>
+                  </h3>
+                  <p className="about__job-dates">{job.dates}</p>
+                </header>
+                <ul>
+                  {job.points.map((point) => (
+                    <li key={point.slice(0, 40)}>{point}</li>
+                  ))}
+                </ul>
+              </article>
             ))}
-          </ul>
+          </div>
         </section>
 
         <section className="about__section">

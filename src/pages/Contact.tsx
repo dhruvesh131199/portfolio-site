@@ -8,8 +8,9 @@ export function Contact() {
       <div className="contact anim-fade-up">
         <h1 className="contact__title">CONTACT</h1>
         <p className="contact__intro">
-          Open to Summer &amp; Fall 2026 co-op / internship conversations —
-          product engineering, AI systems, or data-heavy applications.
+          Master’s student at Rutgers — Computer &amp; Information Sciences —
+          building AI systems and full-stack products. Seeking Fall 2026 co-op /
+          internship opportunities and full-time roles.
         </p>
 
         <ul className="contact__list">

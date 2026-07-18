@@ -215,17 +215,20 @@ export const projects: Project[] = [
 export const about = {
   headline: "I'm Dhruvesh. A builder, systems thinker, and problem solver.",
   paragraphs: [
-    "I'm curious and analytical — drawn to systems that solve complex, real-world problems. Whether it's an AI agent that writes SQL under human supervision, or a full-stack tool that turns market data into decisions, I care about shipping things that work and that people can trust.",
-    "I'm currently pursuing a Master's in Computer & Information Sciences at Rutgers University–New Brunswick, and looking for Summer & Fall 2026 co-op / internship roles where I can contribute to product engineering, AI systems, or data-heavy applications.",
-    "I don't want to build clever demos for their own sake. I want to build ideas and products that are real, that matter, and that hold up when someone actually uses them.",
+    "Master's student at Rutgers, Computer & Information Sciences, building AI systems and full-stack products. Seeking Fall 2026 co-op / internship opportunities and full-time roles.",
+    "I want to build ideas and products that are real, that matter, and that hold up when someone actually uses them.",
   ],
   experience: [
-    "Master's in Computer & Information Sciences — Rutgers University",
-    "Full-stack apps across React, Spring Boot, FastAPI, and Flask",
-    "AI agents with tool-use, human-in-the-loop gates, and MCP-style workflows",
-    "Financial tooling: options strategies, backtesting, volatility models",
-    "Cloud & delivery: Docker, CI/CD, GCP, Render",
+    {
+      title: "Associate Product Analyst",
+      org: "TSS Consultancy, Mumbai",
+      dates: "10/2023 – 12/2024",
+      points: [
+        "Contributed to the technical development of high-scale transaction monitoring tools for major fintech clients (Zerodha, Upstox, Groww) by defining core backend business logic alongside engineering teams.",
+        "Translated complex financial regulatory mandates (SEBI, NSE) into precise technical specifications, coordinating with developers to ensure the compliant and timely delivery of critical platform features.",
+      ],
+    },
   ],
   skills:
-    "Python / Java / React / FastAPI / Flask / Spring Boot / PostgreSQL / MongoDB / Docker / AWS / GCP / Pandas / NumPy / XGBoost / LLMs / MCP / Git / Tableau",
+    "Languages: Python, TypeScript/JavaScript, SQL, Java / AI & Data: MCP, RAG, Hugging Face, Cursor / Frameworks: FastAPI, React, Spring Boot, Flask, Tailwind CSS / Databases: PostgreSQL (pgvector), MongoDB / Cloud & DevOps: AWS (EC2, RDS), GCP, Docker, CI/CD, Git",
 };
