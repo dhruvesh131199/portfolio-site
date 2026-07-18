@@ -8,19 +8,16 @@ export function Home() {
     <PageShell showHome={false} className="home">
       <div className="home__layout">
         <div className="home__bio anim-fade-up" style={{ animationDelay: "0.15s" }}>
+          <img
+            className="home__photo"
+            src={`${import.meta.env.BASE_URL}profile/profile.png`}
+            alt={site.name}
+          />
           <h1 className="home__name">{site.name}</h1>
           <p className="home__tagline">
-            Master’s student at{" "}
-            <a
-              href="https://www.cs.rutgers.edu/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Rutgers
-            </a>{" "}
-            — Computer &amp; Information Sciences — building AI systems,
-            full-stack products, and financial tooling. Seeking Summer &amp; Fall
-            2026 co-op / internship opportunities.
+            Master’s student at Rutgers — Computer &amp; Information Sciences —
+            building AI systems and full-stack products. Seeking Fall 2026
+            co-op / internship opportunities and full-time roles.
           </p>
         </div>
 
