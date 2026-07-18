@@ -1,0 +1,91 @@
+.about {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding-top: clamp(2rem, 8vh, 5rem);
+  padding-right: clamp(0rem, 8vw, 4rem);
+}
+
+.about__label {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.about__headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+}
+
+.about__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.about__body p {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--fg-muted);
+  line-height: 1.7;
+}
+
+.about__section {
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+  margin-bottom: 2rem;
+}
+
+.about__section h2 {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.1rem;
+}
+
+.about__section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.about__section li {
+  font-size: 0.98rem;
+  font-weight: 300;
+  color: var(--fg-muted);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.about__section li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.about__skills {
+  font-size: 0.98rem;
+  font-weight: 300;
+  color: var(--fg-muted);
+  line-height: 1.75;
+}
+
+@media (max-width: 720px) {
+  .about {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,18 @@
+.page-shell {
+  position: relative;
+  min-height: 100dvh;
+}
+
+.page-shell__main {
+  min-height: 100dvh;
+  padding: var(--page-pad);
+  padding-left: calc(var(--page-pad) + 2.5rem);
+  padding-bottom: calc(var(--page-pad) + 2rem);
+}
+
+@media (max-width: 720px) {
+  .page-shell__main {
+    padding-left: var(--page-pad);
+    padding-top: calc(var(--page-pad) + 3rem);
+  }
+}

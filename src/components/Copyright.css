@@ -1,0 +1,19 @@
+.copyright {
+  position: fixed;
+  bottom: var(--page-pad);
+  left: var(--page-pad);
+  z-index: 20;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+}
+
+@media (max-width: 720px) {
+  .copyright {
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+}

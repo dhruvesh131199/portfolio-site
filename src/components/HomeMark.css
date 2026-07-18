@@ -1,0 +1,15 @@
+.home-mark {
+  position: fixed;
+  top: var(--page-pad);
+  right: var(--page-pad);
+  z-index: 20;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  transition: color 0.25s var(--ease-out);
+}
+
+.home-mark:hover {
+  color: var(--accent);
+}
